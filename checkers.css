@@ -1,0 +1,40 @@
+#grid td{
+	width: 8vh;
+	height: 8vh;
+}
+
+#grid{
+	table-layout: fixed;
+	width: 80vh;
+	height: 80vh;
+	position: absolute;
+	left: calc(50vw - 40vh);
+	top: calc(10vh);
+}
+
+.black{
+	background-color: black;
+	border: 5px solid white;
+}
+
+.red{
+	background-color: red;
+	border: 5px solid white;	
+}
+
+.black, .red{
+	position: relative;
+	top: calc(1vh - 10px);
+	left: calc(1vh - 5px);
+	width:6vh;
+	height: 6vh;
+	border-radius: 100%;
+}
+
+[active="true"]{
+	filter: drop-shadow(16px 16px 20px yellow);
+}
+
+body{
+	background-color: #FF44FF;
+}
